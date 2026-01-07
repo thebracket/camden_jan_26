@@ -1,0 +1,31 @@
+[package]
+name = "l3h_jan_2026"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+[workspace]
+members = [
+    "day1/convert_as",
+    "day1/enumerations_task",
+    "day1/hello_world",
+    "day1/login_cli",
+    "day1/login_lib",
+    "day1/overflow_rs",
+    "day2/arena_bump",
+    "day2/arena_slab",
+    "day2/modules",
+    "day2/tcp_eco",
+    "day2/ws_actor",
+    "day3/ffi1/c_to_rust_bindgen",
+    "day3/ffi1/c_to_rust_callback",
+    "day3/ffi1/c_to_rust_struct",
+    "day3/ffi1/rust_to_c",
+    "day3/ffi1/rust_to_c_string",
+    "day3/macros_demo",
+    "day3/no_std_math",
+    "day3/no_std_math_consumer",
+    "day3/procmacros/deriver",
+    "day3/procmacros/deriver-macros",
+]

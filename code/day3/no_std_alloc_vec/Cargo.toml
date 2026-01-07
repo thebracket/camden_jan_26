@@ -1,0 +1,15 @@
+[package]
+name = "no_std_alloc_vec"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+libc = { version = "0.2", default-features = false }
+panic-halt = "0.2"
+wee_alloc = "0.4"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"

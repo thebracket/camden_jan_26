@@ -1,0 +1,8 @@
+[package]
+name = "no_std_math_consumer"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+no_std_math = { path = "../no_std_math" }
+

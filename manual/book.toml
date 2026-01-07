@@ -1,0 +1,14 @@
+[book]
+authors = ["Herbert Wolverson"]
+language = "en"
+src = "src"
+title = "L3 Harris Training - Jan 2026"
+
+[output.html.playground]
+editable = true
+
+[rust]
+edition = "2024"
+
+[output.html]
+default-theme = "light"

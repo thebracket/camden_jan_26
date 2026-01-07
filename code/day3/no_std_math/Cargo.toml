@@ -1,0 +1,10 @@
+[package]
+name = "no_std_math"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies]
+
