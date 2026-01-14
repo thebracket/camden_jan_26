@@ -1,13 +1,14 @@
 fn main() {
-    println!("Hello, world!");
-    let x = 3;
-    let v = vec![1,3,4,5,6];
+    let counter = std::sync::Mutex::new(0);
 
-    v.iter().for_each(move |foo| {
-        println!("{}", foo * x);
+    std::thread::scope(|s| {
+        for _ in 0..10 {
+            s.spawn(|| {
+                let mut num = counter.lock().unwrap();
+                *num += 1;
+            });
+        }
     });
 
-    for foo in &v {
-        println!("{}", foo);
-    }
+    println!("Counter: {}", counter.lock().unwrap());
 }
