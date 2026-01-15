@@ -31,5 +31,11 @@ members = [
     "day3/no_std_math",
     "day3/no_std_math_consumer",
     "day3/procmacros/deriver",
-    "day3/procmacros/deriver-macros", "day2/trait_walk", "day2/ws_primes",
+    "day3/procmacros/deriver-macros", "day2/trait_walk", "day2/ws_primes", "day3/tokio_join",
+]
+
+exclude = [
+    "day3/no_std_printf",
+    "day3/no_std_printf_no_panic_handler",
+    "day3/no_std_alloc_vec",
 ]
